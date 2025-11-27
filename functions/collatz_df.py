@@ -1,5 +1,9 @@
 import pandas as pd
-def collatz_df(x):
+def collatz_df(x: int):
+    '''
+    This function takes in an integer value and passes it to the collatz algorithm.
+    The output is a Pandas DataFrame which contains the step number and the value returned by the algorithm.
+    '''
     if type(x) != int:
         print('your number must be a positive integer')
     elif (type(x) == int and x < 1):
