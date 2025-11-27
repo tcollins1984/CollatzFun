@@ -1,5 +1,9 @@
 #function to run the collatz algorithm on a number of your choice
-def collatz(x):
+def collatz(x:int):
+    """
+    This functions take in an integer values and applies the collatz (3n+1) algorithm until
+    the value of 1 is reached.  Each value is printed out.
+    """
     if type(x) != int:
         print('your number must be a positive integer')
     elif (type(x) == int and x < 1):
